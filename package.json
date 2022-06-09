@@ -1,0 +1,34 @@
+{
+  "name": "thinkful-backend-interview-practice-post-and-get",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "mocha --require test/setup.js --watch",
+    "dev": "nodemon src/server.js",
+    "migrate": "postgrator --config postgrator-config.js",
+    "start": "nodemon src/server.js",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "10.0.0",
+    "ejs": "3.1.6",
+    "express": "4.17.1",
+    "express-static": "1.2.6",
+    "knex": "0.95.11",
+    "morgan": "1.10.0",
+    "pg": "8.7.1",
+    "supertest": "6.2.2",
+    "xss": "1.0.10"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "postgrator-cli": "^3.1.0",
+    "supertest": "^3.3.0"
+  },
+  "keywords": []
+}
